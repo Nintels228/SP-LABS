@@ -1,0 +1,88 @@
+    1  uname -a (Отримання інформації про операційну систему)
+    2  sudo apt upgrade (Оновлення пакетів ОС)
+    3  cat /etc/apt/sources.list (Перегляд списку репозиторіїв)
+    4  sudo apt-get install vim vim-gtk (Встановлення VIM)
+    5  ls (Перегляд вмісту поточного каталогу)
+    6  man ls (Документація по команді ls)
+    7  cd /Downloads (Перехід в папку Downloads)
+    8  cd ~ (Перехід в папку home)
+   15  cd etc/ (Перехід в папку etc)
+   16  ls -la (Перегляд вмісту поточного каталогу з більшою кількістю інформації)
+   17  cd ~ (Перехід в папку home)
+   18  wget https://go.skype.com/skypeforlinux-64.deb (Завантаження пакету skype)
+   19  ls (Перегляд вмісту поточного каталогу)
+   20  sudo dpkg -i skypeforlinux-64.deb (Встановлення пакету skype за допомогою dpkg)
+   21  sudo su (Перехід до суперкористувача)
+   22  echo 'hello, world!' (Вивід тексту написаного в лапках)
+   23  echo $PWD 'hey' (Вивід значення змінної PWD та тексту написаного в лапках)
+   24  touch hi.sh (Створення файлу hi.sh)
+   27  ./hi.sh (Запуск файлу hi.sh, виникає помилка, оскільки файл не є виконуваним)
+   29  chmod +x ./hi.sh (Додавання параметру executable файлу hi.sh)
+   34  ./hi.sh (Запуск файлу hi.sh)
+   35  ./hi.sh Donbass (Запуск файлу hi.sh з параметром)
+   37  cp ./hi.sh Documents (Копіювання файлу hi.sh в директорію Documents)
+   38  cd Documents/ (Перехід в директорію Documents)
+   39  ls 
+   41  mkdir ps (Створення директорії ps)
+   42  ls
+   43  mv ./hi.sh ./ps (Переміщення файлу в директорію ps)
+   44  ls
+   45  cd ps (Перехід в директорію ps)
+   46  ls
+   47  mkdir ps1 (Створення директорії ps1)
+   48  ls
+   49  rm -rf ps1 (Видалення директорії ps1)
+   50  ls
+   51  cd /bin
+   52  ls
+   53  ls -l
+   55  cd ~
+   56  ls
+   57  cd Documents/ps/
+   58  ls
+   59  tar cvf myscript.tar hi.sh (Створення архіву myscript.tar та додавання до нього файлу hi.sh)
+   60  ls
+   61  cat ./hi.sh (Вивід вмісту файлу hi.sh)
+   62  cat /var/log/syslog (Вивід логів системи)
+   63  tail -n5 /var/log/syslog (Вивід останніх 5 рядків логів системи)
+   65  less /var/log/syslog (Перегляд файлу syslog)
+   66  cd ../..
+   68  find . -name dhcp (Пошук об'єктів, які мають назву dhcp)
+   69  find . -name *dhcp* (Пошук об'єктів, які містять у своїй назві dhcp)
+   70  find . -name *dhcp* | grep -i dhcp (Пошук об'єктів, які містять у своїй назві dhcp та виділення dhcp у повному шляху до об'єкту)
+   71  find . -name *dhcp* | grep -i etc (Пошук об'єктів, які містять у своїй назві dhcp та виділення etc у повному шляху до об'єкту)
+   72  ping google.com (Пінгування сайту google.com)
+   73  ping google.com& (Пінгування сайту google.com у фоновому режимі)
+   74  date (Отримання поточної дати та часу)
+   75  fg (Переведення виконання процесу з фонового у звичайний режим)
+   76  cd ~
+   77  ping google.com& (Пінгування сайту google.com у фоновому режимі)
+    1  ps aux | grep -i ping (Вивід усіх активних процесів, які містять слово ping)
+    2  kill 25419 (Завершення процесу 25419)
+   78  sudo ping google.com& (Пінгування сайту google.com у фоновому режимі від імені суперкористувача)
+    3  ps aux | grep -i ping 
+    4  kill 25439
+    5  ps aux | grep -i ping    
+    6  sudo kill -9 25439
+   85  echo $PATH (Вивід у консоль значення змінної PATH)
+   86  export (Вивід у консоль у сіх змінних оточення)
+   87  echo $USER (Вивід у консоль значення змінної USER)
+   94  dmesg (Помилка dmesg: read kernel buffer failed: Operation not permitted)
+   95  sudo dmesg (Вівід повідомлень ядра)
+   98  sudo dmesg -c (Очищення повідомлень ядра)
+   99  sudo dmesg
+  101  sudo dmesg
+  103  cat /proc/cpuinfo (Вивід даних про процессор)
+  104  ifconfig (Помилка пов'язана з тим, що утиліта ifconfig не встановлена)
+  105  sudo apt install net-tools (Встановлення пакету утиліт net-tools)
+  106  ifconfig (Вивід інформації про підключення до мережі)
+  110  echo hi.sh > 1.txt (Запис рядка hi.sh у файл 1.txt)
+  111  cat 1.txt (Вивід вмісту файлу 1.txt)
+  112  echo hey > 2.txt (Запис рядка hey у файл 1.txt)
+  113  diff 2.txt 1.txt (Вивід різниці між файлами 2.txt та 2.txt)
+  114  history (Вивід історії команд)
+  115  lsmod (Перегляд інформації про завантажені модулі ядра)
+  116  lspci(Перегляд інформації про psi шини)
+  117  df (Перегляд інформації про файлову систему)
+  118  history
+
